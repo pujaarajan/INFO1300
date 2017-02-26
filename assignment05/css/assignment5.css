@@ -1,0 +1,110 @@
+/* code adapted from INFO 1300 Fall 2016 class */
+
+
+html, body {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+body {
+    background-color: #efefef;
+    font-family: Ovo, serif;
+    font-size: 0.9em;
+}
+
+h1, h2 {
+    font-family: Muli, sans-serif;
+}
+
+/****************************/
+/* styling by section       */
+/****************************/
+
+#top {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+#top > img {
+    width: 100%;
+}
+
+#container {
+    /* border: solid 1px red; */
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+#content {
+    /* border: solid 1px #dedede; */
+    background-color: #ffffff;
+    float: left;
+    margin-top: 2em;
+    /* margin-right: auto; */
+    margin-left: 2.5em;
+    width: 74%;
+    padding: 0.5em; 
+}
+
+#image {
+    /* border: solid 1px green; */
+    width: 50%;
+}
+
+.image3 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+}
+
+/****************************/
+/* media queries            */
+/****************************/
+
+@media screen and (max-width: 1000px) {
+    #content {
+        width: 94%;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    #top > img {
+        max-width: 900px;
+    }
+    
+    #content {
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #top_nav > span:first-child {
+        margin-left: 0em;
+    }
+    
+    #top > img {
+        display: none;
+    }
+
+    #image {
+        display: none;
+    }
+    
+}
+
+
+    
+    

@@ -1,0 +1,57 @@
+<!-- 
+* Inspired by INFO/CS 1300 Fall 2016 Steve Paling and
+* http://stackoverflow.com/questions/12013658/trying-to-get-simple-javascript-gallery-with-next-and-previous-buttons-to-loop-b
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pictures of Cornell University</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/site.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="title">
+      <h1>Pictures of Cornell University</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div id="container">
+        <div id="button_div">
+
+             <input type="button" value="&lt;&lt;Back" onClick="backward()"> 
+
+             <img src = "images/1.jpg" id = "prev" alt = "Image 1">
+
+
+             <input type="button" value="Next&gt;&gt;" onClick="forward()">
+
+
+
+        </div> <!-- end of button_div -->
+        <!-- Image Citations
+            https://www.google.com/search?q=cornell&espv=2&biw=995&bih=495&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjt-rqEm-XPAhWDWT4KHbTFDjQQ_AUICCgD#imgrc=LZo9noVYntoKhM%3A
+
+            https://www.google.com/search?q=cornell&espv=2&biw=995&bih=495&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjt-rqEm-XPAhWDWT4KHbTFDjQQ_AUICCgD#imgdii=LZo9noVYntoKhM%3A%3BLZo9noVYntoKhM%3A%3BEmhVaUhOLSAjbM%3A&imgrc=LZo9noVYntoKhM%3A
+            
+            https://www.google.com/search?q=cornell&espv=2&biw=995&bih=495&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjt-rqEm-XPAhWDWT4KHbTFDjQQ_AUICCgD#imgdii=LZo9noVYntoKhM%3A%3BLZo9noVYntoKhM%3A%3BPIQk10lDlkDGUM%3A&imgrc=LZo9noVYntoKhM%3A
+
+            https://www.google.com/search?q=cornell&espv=2&biw=995&bih=495&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjt-rqEm-XPAhWDWT4KHbTFDjQQ_AUICCgD#imgdii=LZo9noVYntoKhM%3A%3BLZo9noVYntoKhM%3A%3BMMsPGiqeaAJ8TM%3A&imgrc=LZo9noVYntoKhM%3A
+
+          -->
+        <!-- page will not validate until image source has a value -->
+    </div>
+    <footer id="demo">
+      <script>
+      var d = new Date();
+      document.getElementById("demo").innerHTML = d.toDateString();
+      </script>
+    </footer>
+  </body>
+</html>
